@@ -10,6 +10,6 @@ set(CMAKE_CXX_STANDARD 11)
 find_library(PQXX_LIB pqxx)
 find_library(PQ_LIB pq)
 
-add_executable(PostgreSQL main.cpp)
+add_executable(PostgreSQL src/main.cpp)
 
 target_link_libraries(PostgreSQL ${PQXX_LIB} ${PQ_LIB})
